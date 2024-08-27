@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "Hello.C": "cpp"
+        "Hello.C": "cpp",
+        "locale": "c",
+        "string": "c"
     }
 }
