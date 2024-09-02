@@ -6,9 +6,9 @@ void copy(char to[], char from[]);
 
 /* print the longest input line */
 int main(void)
-{
+{   
     int len; /* current line length */
-    int max; /* maximum length seen so far */
+    int max; /* maximum length seen so far */   
     char line[MAXLINE]; /* current input line */
     char longest[MAXLINE]; /* longest line saved here */
     max = 0;
@@ -18,9 +18,9 @@ int main(void)
             copy(longest, line);
         }
     if (max > 0) /* there was a line */
-        printf("%s", longest);
+        printf("%s\nYour longest sentence is %d characters long.\n", longest, max);
     return 0;
-}
+    }
 
 /* my_getline: read a line into s, return length */
 int my_getline(char s[],int lim)
