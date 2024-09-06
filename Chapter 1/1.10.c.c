@@ -2,7 +2,7 @@
 #include <string.h>
 
 #define MAXLINE 1000
-#define LIMIT 20
+#define LIMIT 15
 
 int my_getline(char s[], int lim);
 int cut(char s[], int start);
@@ -13,7 +13,7 @@ int main(void)
 	int length;
 	char string[MAXLINE];
 
-	while ((length = getline(string,MAXLINE)) > 0) {
+	while ((length = my_getline(string,MAXLINE)) > 0) {
 		if (length > LIMIT) {
 			cut(string, 0);
 			printf("%s",string);
