@@ -2,6 +2,7 @@
     "files.associations": {
         "Hello.C": "cpp",
         "locale": "c",
-        "string": "c"
+        "string": "c",
+        "PushingLeft.C": "cpp"
     }
 }
